@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Target, User, BookOpen, Calendar, Settings, LogOut, BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import ChatBot from "@/components/ChatBot";
 
 const Dashboard = () => {
   const [user] = useState({
@@ -197,6 +198,9 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
+
+      {/* ChatBot Component */}
+      <ChatBot />
     </div>
   );
 };
